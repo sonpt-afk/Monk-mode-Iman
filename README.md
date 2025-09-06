@@ -1,3 +1,5 @@
+/chat load initMonkMode
+
 # Monk Mode Dashboard
 
 Đây là project theo dõi tiến độ 6 tháng "Monk Mode" dành cho Web Developer.
@@ -23,14 +25,17 @@ Sau khi code đã được sửa đổi để tương thích với Vercel, hãy 
 ### 2. Deploy lên Vercel
 
 1.  **Đăng ký/Đăng nhập Vercel:**
+
     - Truy cập [Vercel](https://vercel.com) và đăng ký một tài khoản mới bằng cách chọn "Continue with GitHub".
 
 2.  **Tạo Project mới:**
+
     - Sau khi đăng nhập, bạn sẽ được chuyển đến dashboard. Click vào nút "**Add New...**" -> "**Project**".
     - Chọn repository `monk-mode-dashboard` bạn vừa đẩy lên GitHub.
     - Vercel sẽ tự động nhận diện đây là project Node.js.
 
 3.  **Tạo và Kết nối Vercel KV Storage:**
+
     - Trong trang cấu hình project, hãy chuyển đến tab "**Storage**".
     - Click "**Connect Store**" bên cạnh "KV (beta)".
     - Chọn "**Create New**", đặt tên cho database (ví dụ: `monk-db`), chọn khu vực gần nhất và click "**Create**".

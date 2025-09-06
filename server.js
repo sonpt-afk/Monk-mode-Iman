@@ -48,12 +48,12 @@ async function getDatabase() {
             {name: "Exercise Streak", description: "Tập thể dục 5 ngày/tuần trong 4 tuần", earned: false},
             {name: "Sleep Champion", description: "Ngủ 7-8h trong 21 ngày liền", earned: false}
         ],
-        monk_mode_curriculum: JSON.parse(await fs.readFile(path.join(__dirname, 'public/monk_mode_curriculum.json'), 'utf-8')),
-        daily_schedule: JSON.parse(await fs.readFile(path.join(__dirname, 'public/daily_schedule.json'), 'utf-8')),
-        health_checklist: JSON.parse(await fs.readFile(path.join(__dirname, 'public/health_checklist.json'), 'utf-8')),
-        anti_distraction_system: JSON.parse(await fs.readFile(path.join(__dirname, 'public/anti_distraction_system.json'), 'utf-8')),
-        tracking_dashboard: JSON.parse(await fs.readFile(path.join(__dirname, 'public/tracking_dashboard.json'), 'utf-8')),
-        monk_mode_flashcards: JSON.parse(await fs.readFile(path.join(__dirname, 'public/monk_mode_flashcards.json'), 'utf-8'))
+        monk_mode_curriculum: JSON.parse(await fs.readFile(path.join(__dirname, monk_mode_curriculum.json'), 'utf-8')),
+        daily_schedule: JSON.parse(await fs.readFile(path.join(__dirname, daily_schedule.json'), 'utf-8')),
+        health_checklist: JSON.parse(await fs.readFile(path.join(__dirname, health_checklist.json'), 'utf-8')),
+        anti_distraction_system: JSON.parse(await fs.readFile(path.join(__dirname, anti_distraction_system.json'), 'utf-8')),
+        tracking_dashboard: JSON.parse(await fs.readFile(path.join(__dirname, tracking_dashboard.json'), 'utf-8')),
+        monk_mode_flashcards: JSON.parse(await fs.readFile(path.join(__dirname, monk_mode_flashcards.json'), 'utf-8'))
     };
 
     await kv.set('db', initialDb);
