@@ -6,34 +6,70 @@ const { createClient } = require('@vercel/kv');
 const app = express();
 const port = 3000;
 
-// Use Vercel KV client if environment variables are set, otherwise fallback to a local file mock for development
-const kv = process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN
-  ? createClient({
-      url: process.env.KV_REST_API_URL,
-      token: process.env.KV_REST_API_TOKEN,
-    })
-  : {
-      // Mock KV for local development
-      _dbPath: path.join(__dirname, 'db.json'),
-      async get(key) {
-        try {
-            const data = await fs.readFile(this._dbPath, 'utf-8');
-            const db = JSON.parse(data);
-            return db;
-        } catch (e) { return null; }
-      },
-      async set(key, value) {
-        await fs.writeFile(this._dbPath, JSON.stringify(value, null, 2));
-      }
-  };
+const kv = createClient({
+  url: process.env.KV_REST_API_URL,
+  token: process.env.KV_REST_API_TOKEN,
+});
 
-app.use(express.json());
+// --- Database Initialization Logic ---
+// This function ensures the database is initialized before any operation.
+async function getDatabase() {
+  let db = await kv.get('db');
+  if (!db) {
+    console.log('Database not found, initializing with static JSON data...');
+    
+    const initialDb = {
+        user_profile: {
+            name: "Web Developer",
+            start_date: new Date().toISOString().split('T')[0],
+            current_month: 1,
+            days_completed: 0,
+            streak_count: 0
+        },
+        daily_targets: {
+            deep_work_hours: 3,
+            phone_screen_time: 1,
+            exercise_sessions_per_week: 5,
+            sleep_hours: 8,
+            meditation_minutes: 10
+        },
+        daily_logs: [],
+        motivational_quotes: [
+            "Kỷ luật là lựa chọn giữa thứ bạn muốn bây giờ và thứ bạn muốn nhất.",
+            "Bạn không vươn tới mức độ của mục tiêu. Bạn rơi xuống mức độ của hệ thống.",
+            "Đầu tư tốt nhất bạn có thể làm là đầu tư vào chính mình.",
+            "Tập trung là lợi thế cạnh tranh tối thượng trong thế giới hiện đại.",
+            "Những cải thiện nhỏ hàng ngày dẫn đến kết quả tuyệt vời theo thời gian."
+        ],
+        achievement_badges: [
+            {name: "Early Riser", description: "Thức dậy lúc 6h trong 7 ngày liền", earned: false},
+            {name: "Deep Work Master", description: "Hoàn thành 3+ giờ deep work trong 7 ngày", earned: false},
+            {name: "Phone Detox", description: "Giữ thời gian sử dụng điện thoại dưới 1h trong 14 ngày", earned: false},
+            {name: "Exercise Streak", description: "Tập thể dục 5 ngày/tuần trong 4 tuần", earned: false},
+            {name: "Sleep Champion", description: "Ngủ 7-8h trong 21 ngày liền", earned: false}
+        ],
+        monk_mode_curriculum: JSON.parse(await fs.readFile(path.join(__dirname, 'public/monk_mode_curriculum.json'), 'utf-8')),
+        daily_schedule: JSON.parse(await fs.readFile(path.join(__dirname, 'public/daily_schedule.json'), 'utf-8')),
+        health_checklist: JSON.parse(await fs.readFile(path.join(__dirname, 'public/health_checklist.json'), 'utf-8')),
+        anti_distraction_system: JSON.parse(await fs.readFile(path.join(__dirname, 'public/anti_distraction_system.json'), 'utf-8')),
+        tracking_dashboard: JSON.parse(await fs.readFile(path.join(__dirname, 'public/tracking_dashboard.json'), 'utf-8')),
+        monk_mode_flashcards: JSON.parse(await fs.readFile(path.join(__dirname, 'public/monk_mode_flashcards.json'), 'utf-8'))
+    };
+
+    await kv.set('db', initialDb);
+    db = initialDb;
+    console.log('Database initialized successfully.');
+  }
+  return db;
+}
+
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
 
 // API to get all data
 app.get('/api/data', async (req, res) => {
     try {
-        const data = await kv.get('db');
+        const data = await getDatabase();
         res.json(data);
     } catch (error) {
         console.error('Error reading database:', error);
@@ -45,11 +81,7 @@ app.get('/api/data', async (req, res) => {
 app.post('/api/log', async (req, res) => {
     try {
         const dailyLog = req.body;
-        const db = await kv.get('db');
-
-        if (!db) {
-            return res.status(500).json({ message: 'Database not initialized' });
-        }
+        const db = await getDatabase();
 
         const existingIndex = db.daily_logs.findIndex(log => log.date === dailyLog.date);
 
@@ -60,7 +92,6 @@ app.post('/api/log', async (req, res) => {
         }
 
         db.user_profile.days_completed = db.daily_logs.length;
-        // A more complex streak logic would be needed for a real app
         db.user_profile.streak_count = db.daily_logs.length; 
 
         await kv.set('db', db);
@@ -72,73 +103,9 @@ app.post('/api/log', async (req, res) => {
     }
 });
 
-// Load initial static data into db.json if it's empty
-const initializeDatabase = async () => {
-    try {
-        const db = await kv.get('db');
-
-        if (db && db.monk_mode_curriculum && Object.keys(db.monk_mode_curriculum).length > 0) {
-            console.log('Database already initialized.');
-            return;
-        }
-
-        console.log('Initializing database with static JSON data...');
-        
-        const initialDb = {
-            user_profile: {
-                name: "Web Developer",
-                start_date: new Date().toISOString().split('T')[0],
-                current_month: 1,
-                days_completed: 0,
-                streak_count: 0
-            },
-            daily_targets: {
-                deep_work_hours: 3,
-                phone_screen_time: 1,
-                exercise_sessions_per_week: 5,
-                sleep_hours: 8,
-                meditation_minutes: 10
-            },
-            daily_logs: [],
-            motivational_quotes: [
-                "Kỷ luật là lựa chọn giữa thứ bạn muốn bây giờ và thứ bạn muốn nhất.",
-                "Bạn không vươn tới mức độ của mục tiêu. Bạn rơi xuống mức độ của hệ thống.",
-                "Đầu tư tốt nhất bạn có thể làm là đầu tư vào chính mình.",
-                "Tập trung là lợi thế cạnh tranh tối thượng trong thế giới hiện đại.",
-                "Những cải thiện nhỏ hàng ngày dẫn đến kết quả tuyệt vời theo thời gian."
-            ],
-            achievement_badges: [
-                {name: "Early Riser", description: "Thức dậy lúc 6h trong 7 ngày liền", earned: false},
-                {name: "Deep Work Master", description: "Hoàn thành 3+ giờ deep work trong 7 ngày", earned: false},
-                {name: "Phone Detox", description: "Giữ thời gian sử dụng điện thoại dưới 1h trong 14 ngày", earned: false},
-                {name: "Exercise Streak", description: "Tập thể dục 5 ngày/tuần trong 4 tuần", earned: false},
-                {name: "Sleep Champion", description: "Ngủ 7-8h trong 21 ngày liền", earned: false}
-            ],
-            monk_mode_curriculum: JSON.parse(await fs.readFile(path.join(__dirname, 'public/monk_mode_curriculum.json'), 'utf-8')),
-            daily_schedule: JSON.parse(await fs.readFile(path.join(__dirname, 'public/daily_schedule.json'), 'utf-8')),
-            health_checklist: JSON.parse(await fs.readFile(path.join(__dirname, 'public/health_checklist.json'), 'utf-8')),
-            anti_distraction_system: JSON.parse(await fs.readFile(path.join(__dirname, 'public/anti_distraction_system.json'), 'utf-8')),
-            tracking_dashboard: JSON.parse(await fs.readFile(path.join(__dirname, 'public/tracking_dashboard.json'), 'utf-8')),
-            monk_mode_flashcards: JSON.parse(await fs.readFile(path.join(__dirname, 'public/monk_mode_flashcards.json'), 'utf-8'))
-        };
-
-        await kv.set('db', initialDb);
-        console.log('Database initialized successfully.');
-
-    } catch (error) {
-        console.error('Error initializing database:', error);
-    }
-};
-
-// For Vercel, the server needs to export the app.
-// For local development, we listen on a port.
-if (process.env.VERCEL) {
-    initializeDatabase().then(() => console.log('Vercel init complete.'));
-} else {
-    app.listen(port, () => {
-        console.log(`Server running at http://localhost:${port}`);
-        initializeDatabase();
-    });
-}
+// For local development, we can remove the VERCEL check and just listen
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+});
 
 module.exports = app;

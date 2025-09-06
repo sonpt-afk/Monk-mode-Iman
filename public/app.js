@@ -22,6 +22,9 @@ class MonkModeDashboard {
         try {
             const response = await fetch('/api/data');
             this.data = await response.json();
+            if (!this.data) {
+                throw new Error('Received null or invalid data from server');
+            }
             // Add default targets if not present
             this.data.daily_targets = this.data.daily_targets || {
                 deep_work_hours: 3,
