@@ -224,21 +224,25 @@ class MonkModeDashboard {
             notes: document.getElementById('dailyNotes').value || ''
         };
 
-        // Update or add log
-        const existingIndex = this.data.daily_logs.findIndex(log => log.date === this.currentDate);
-        if (existingIndex >= 0) {
-            this.data.daily_logs[existingIndex] = formData;
-        } else {
-            this.data.daily_logs.push(formData);
-        }
+        this.saveData(formData).then(success => {
+            if (success) {
+                this.updateTodayMetrics();
+                this.updateWeeklyStats();
+                this.checkAchievements();
+                this.renderOverview();
 
-        this.saveData();
-        this.updateTodayMetrics();
-        this.updateWeeklyStats();
-        this.checkAchievements();
-        
-        // Show success message
-        this.showAchievementModal('✅ Đã lưu dữ liệu ngày hôm nay thành công!');
+                Toastify({
+                    text: "Lưu thành công!",
+                    duration: 2000,
+                    close: true,
+                    gravity: "top",
+                    position: "right",
+                    backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+                    stopOnFocus: true,
+                    callback: () => this.switchTab('overview')
+                }).showToast();
+            }
+        });
     }
 
     // Weekly Stats
