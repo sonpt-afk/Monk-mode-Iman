@@ -28,7 +28,6 @@ const kv = process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN
   };
 
 app.use(express.json());
-app.use(express.static(__dirname));
 
 // API to get all data
 app.get('/api/data', async (req, res) => {
