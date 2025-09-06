@@ -28,6 +28,12 @@ const kv = process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN
   };
 
 app.use(express.json());
+app.use(express.static(__dirname)); // For /style.css, /app.js etc.
+
+// Explicitly serve index.html for the root path
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
 
 // API to get all data
 app.get('/api/data', async (req, res) => {
