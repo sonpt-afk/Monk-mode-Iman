@@ -523,34 +523,7 @@ class MonkModeDashboard {
         const themeButton = document.getElementById('themeToggle');
         themeButton.textContent = newTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
         
-        localStorage.setItem('theme', newTheme);n/json;charset=utf-8,'+ encodeURIComponent(dataStr);
-        
-        const exportFileDefaultName = `monk-mode-data-${new Date().toISOString().split('T')[0]}.json`;
-        
-        const linkElement = document.createElement('a');
-        linkElement.setAttribute('href', dataUri);
-        linkElement.setAttribute('download', exportFileDefaultName);
-        linkElement.click();
-    }
-}
-
-// Initialize Dashboard
-document.addEventListener('DOMContentLoaded', () => {
-    // Load saved theme
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        document.documentElement.setAttribute('data-color-scheme', savedTheme);
-        const themeButton = document.getElementById('themeToggle');
-        themeButton.textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
-    }
-
-    // Initialize dashboard
-    window.dashboard = new MonkModeDashboard();
-});}
-
-    // Initialize dashboard
-    window.dashboard = new MonkModeDashboard();
-});
+        localStorage.setItem('theme', newTheme);
     }
 
     exportData() {
