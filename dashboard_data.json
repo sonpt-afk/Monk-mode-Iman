@@ -1,0 +1,130 @@
+{
+  "user_profile": {
+    "name": "Web Developer",
+    "start_date": "2025-09-06",
+    "current_month": 1,
+    "days_completed": 0,
+    "streak_count": 0
+  },
+  "daily_metrics": {
+    "deep_work_hours": {
+      "target": 3,
+      "current": 0,
+      "weekly_average": 0,
+      "best_day": 0,
+      "streak": 0
+    },
+    "phone_screen_time": {
+      "target": 1,
+      "current": 0,
+      "weekly_average": 0,
+      "success_days": 0
+    },
+    "exercise_sessions": {
+      "target": 5,
+      "current_week": 0,
+      "total_sessions": 0,
+      "longest_streak": 0
+    },
+    "sleep_quality": {
+      "target_hours": 8,
+      "actual_hours": 0,
+      "sleep_score": 0,
+      "bedtime_consistency": 0
+    }
+  },
+  "weekly_goals": {
+    "side_project": {
+      "target": "1 major feature or 3 small features",
+      "completed": 0,
+      "current_project": "Personal Portfolio V2",
+      "github_commits": 0
+    },
+    "learning": {
+      "target": "1 course module or tutorial",
+      "completed": 0,
+      "current_skill": "Next.js Advanced Patterns",
+      "progress_percent": 0
+    },
+    "networking": {
+      "target": "3 professional interactions",
+      "completed": 0,
+      "linkedin_messages": 0,
+      "meetups_attended": 0
+    }
+  },
+  "monthly_milestones": [
+    {
+      "month": 1,
+      "title": "Foundation & Discipline Reset",
+      "status": "in_progress",
+      "key_goals": [
+        "Establish 6AM wake-up routine",
+        "Reduce phone usage to <1h daily",
+        "Complete 2h deep work blocks",
+        "Dopamine detox achievement"
+      ],
+      "completion_rate": 0
+    },
+    {
+      "month": 2,
+      "title": "Deep Work & Focus Mastery",
+      "status": "not_started",
+      "key_goals": [
+        "Achieve 3-4h daily deep work",
+        "Zero notification interruptions",
+        "Complete challenging project",
+        "Master focus techniques"
+      ],
+      "completion_rate": 0
+    },
+    {
+      "month": 3,
+      "title": "Health & Energy Optimization",
+      "status": "not_started",
+      "key_goals": [
+        "Stable exercise routine (5x/week)",
+        "Sleep optimization complete",
+        "Nutrition habits locked",
+        "Energy levels improved"
+      ],
+      "completion_rate": 0
+    },
+    {
+      "month": 4,
+      "title": "Skill Building & Side Projects",
+      "status": "not_started",
+      "key_goals": [
+        "Learn new tech stack",
+        "Side project MVP deployed",
+        "Portfolio updated",
+        "Open source contributions"
+      ],
+      "completion_rate": 0
+    },
+    {
+      "month": 5,
+      "title": "Wealth & Career Growth",
+      "status": "not_started",
+      "key_goals": [
+        "Job market research",
+        "Resume/portfolio update",
+        "Active job applications",
+        "Interview preparation"
+      ],
+      "completion_rate": 0
+    },
+    {
+      "month": 6,
+      "title": "Integration & Sustainability",
+      "status": "not_started",
+      "key_goals": [
+        "System optimization",
+        "Next 6 months planning",
+        "Mentoring setup",
+        "Celebration & new challenges"
+      ],
+      "completion_rate": 0
+    }
+  ]
+}

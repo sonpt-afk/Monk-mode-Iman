@@ -1,0 +1,152 @@
+{
+  "daily_health_habits": {
+    "physical_health": [
+      {
+        "habit": "Hydration Tracking",
+        "target": "2.5L water/day",
+        "time_required": "0 min (passive)",
+        "how_to": "1 glass sau khi thức dậy, 1 glass mỗi 2h work, track bằng app"
+      },
+      {
+        "habit": "Posture Breaks",
+        "target": "Every 50 minutes",
+        "time_required": "2 min",
+        "how_to": "Set timer, stand up, shoulder rolls, neck stretches"
+      },
+      {
+        "habit": "Eye Rest (20-20-20)",
+        "target": "Every 20 minutes",
+        "time_required": "1 min",
+        "how_to": "Look at something 20 feet away for 20+ seconds"
+      },
+      {
+        "habit": "Deep Work Exercise",
+        "target": "30-45 min/day",
+        "time_required": "30-45 min",
+        "how_to": "Morning workout before work. Gym (M,W,F), Cardio (T,Th,S)"
+      }
+    ],
+    "nutrition_optimization": [
+      {
+        "habit": "Meal Prep Sunday",
+        "target": "Weekly batch cooking",
+        "time_required": "2 hours Sunday",
+        "how_to": "Cook proteins, chop veggies, portion snacks for week"
+      },
+      {
+        "habit": "Healthy Snacking",
+        "target": "Replace junk with brain foods",
+        "time_required": "0 min extra",
+        "how_to": "Nuts, fruits, yogurt instead of chips/candy"
+      },
+      {
+        "habit": "Caffeine Management",
+        "target": "Max 2 cups coffee before 2PM",
+        "time_required": "0 min",
+        "how_to": "Switch to green tea or water after 2PM"
+      },
+      {
+        "habit": "Intermittent Fasting",
+        "target": "16:8 window (optional)",
+        "time_required": "0 min",
+        "how_to": "Eat 12PM-8PM, fast 8PM-12PM next day"
+      }
+    ],
+    "sleep_optimization": [
+      {
+        "habit": "Consistent Sleep Schedule",
+        "target": "Sleep 10PM, Wake 6AM",
+        "time_required": "8h total",
+        "how_to": "Same time daily, even weekends. Use sleep tracker"
+      },
+      {
+        "habit": "Blue Light Management",
+        "target": "No screens 1h before bed",
+        "time_required": "0 min",
+        "how_to": "f.lux on computer, blue light glasses, phone Do Not Disturb"
+      },
+      {
+        "habit": "Sleep Environment",
+        "target": "Cool, dark, quiet room",
+        "time_required": "0 min daily",
+        "how_to": "Blackout curtains, 18-20°C, phone outside bedroom"
+      }
+    ]
+  },
+  "weekly_health_schedule": {
+    "monday": {
+      "morning": "Gym - Upper body (45 min)",
+      "work_breaks": "Posture check every hour",
+      "evening": "Meal prep planning",
+      "sleep_prep": "No screens after 9PM"
+    },
+    "tuesday": {
+      "morning": "Cardio - Running/Cycling (30 min)",
+      "work_breaks": "Eye exercises focus",
+      "evening": "Light stretching",
+      "sleep_prep": "Reading instead of Netflix"
+    },
+    "wednesday": {
+      "morning": "Gym - Lower body (45 min)",
+      "work_breaks": "Hydration focus",
+      "evening": "Social time/hobbies",
+      "sleep_prep": "Meditation app"
+    },
+    "thursday": {
+      "morning": "Cardio - HIIT/Swimming (30 min)",
+      "work_breaks": "Walking meeting nếu có thể",
+      "evening": "Side project work",
+      "sleep_prep": "Journaling"
+    },
+    "friday": {
+      "morning": "Gym - Full body (45 min)",
+      "work_breaks": "Extra posture attention",
+      "evening": "Social activities",
+      "sleep_prep": "Plan weekend activities"
+    },
+    "saturday": {
+      "morning": "Active recovery - Yoga/Walk (30 min)",
+      "work_breaks": "Minimal screen time",
+      "evening": "Meal prep for next week",
+      "sleep_prep": "Early rest for Sunday productivity"
+    },
+    "sunday": {
+      "morning": "Rest or light activity",
+      "work_breaks": "Planning next week",
+      "evening": "Prep clothes, plan meals",
+      "sleep_prep": "Early sleep for Monday energy"
+    }
+  },
+  "health_metrics_tracking": [
+    {
+      "metric": "Weight",
+      "frequency": "Weekly - Sunday morning",
+      "target": "Maintain or slow decrease",
+      "tool": "Digital scale"
+    },
+    {
+      "metric": "Sleep Quality",
+      "frequency": "Daily",
+      "target": "7-8h, sleep score >80",
+      "tool": "Sleep Cycle app or smartwatch"
+    },
+    {
+      "metric": "Water Intake",
+      "frequency": "Daily",
+      "target": "2.5L minimum",
+      "tool": "Water tracking app"
+    },
+    {
+      "metric": "Exercise Consistency",
+      "frequency": "Daily",
+      "target": "5-6 days/week active",
+      "tool": "Fitness app or calendar"
+    },
+    {
+      "metric": "Energy Levels",
+      "frequency": "Daily (1-10 scale)",
+      "target": "Average 7+ throughout day",
+      "tool": "Daily journal or mood tracker"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "phone_management": {
+    "morning": [
+      "Phone ở airplane mode until 8:30 AM",
+      "No social media check trong 2h đầu",
+      "Use physical alarm clock, không phone beside bed"
+    ],
+    "work_hours": [
+      "Phone ở drawer hoặc khác room trong deep work",
+      "Notifications OFF cho tất cả apps except calls",
+      "Use website blockers: Cold Turkey, Freedom",
+      "Check messages chỉ 2 times: 12:30 và 16:00"
+    ],
+    "evening": [
+      "No phone 1h before sleep (21:00 onwards)",
+      "Charge phone outside bedroom",
+      "Use Do Not Disturb 21:00-07:00"
+    ]
+  },
+  "computer_distractions": {
+    "browser_control": [
+      "Block social media: Facebook, Instagram, TikTok",
+      "Block news sites during work hours",
+      "YouTube chỉ cho work-related content",
+      "Use browser extensions: StayFocusd, BlockSite"
+    ],
+    "communication_boundaries": [
+      "Slack/Teams: Check mỗi 2h, không real-time",
+      "Email: Batch process 2 lần/ngày",
+      "Turn off desktop notifications",
+      "Use Focus modes trên MacOS/Windows"
+    ],
+    "workspace_optimization": [
+      "1 monitor setup (avoid multi-monitor distraction)",
+      "Clean desktop, minimal icons",
+      "Close unused applications",
+      "Use full-screen mode cho deep work"
+    ]
+  },
+  "environmental_control": {
+    "physical_space": [
+      "Dedicated workspace, không bedroom",
+      "Noise-cancelling headphones",
+      "Good lighting, plants for air quality",
+      "Keep water bottle, avoid kitchen trips"
+    ],
+    "social_boundaries": [
+      "Communicate work hours to family/roommates",
+      "Use 'Do Not Disturb' sign during deep work",
+      "Schedule social time outside work hours",
+      "Say NO to non-essential meetings"
+    ]
+  }
+}

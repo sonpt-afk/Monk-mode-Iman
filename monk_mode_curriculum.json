@@ -1,0 +1,146 @@
+{
+  "month_1": {
+    "theme": "Foundation & Discipline Reset",
+    "core_focus": "Dopamine detox và thiết lập thói quen cơ bản",
+    "daily_habits": [
+      "1h screen time điện thoại tối đa",
+      "10 phút thiền định",
+      "Không YouTube/social media (chỉ work-related)",
+      "Wake up 6:00 AM - Sleep 10:00 PM",
+      "Daily journaling 5 phút"
+    ],
+    "weekly_practices": [
+      "Plan tuần vào Chủ nhật",
+      "Review progress thứ 6",
+      "Deep work block 2h x 5 ngày/tuần",
+      "1 buổi hoàn toàn offline trong cuối tuần"
+    ],
+    "checkpoints": [
+      "Tuần 1: Thiết lập basic routine",
+      "Tuần 2: Stable wake-up time",
+      "Tuần 3: 2h deep work consistency",
+      "Tuần 4: Complete dopamine reset"
+    ],
+    "target_hours": "2-3h deep work/ngày"
+  },
+  "month_2": {
+    "theme": "Deep Work & Focus Mastery",
+    "core_focus": "Tối ưu khả năng concentration và productivity",
+    "daily_habits": [
+      "3h deep work blocks (chia 2 sessions)",
+      "Pomodoro technique cho complex tasks",
+      "Email check 2 lần/ngày max",
+      "Phone airplane mode trong work hours",
+      "End-of-day shutdown ritual"
+    ],
+    "weekly_practices": [
+      "Weekly deep work audit",
+      "Optimize workspace setup",
+      "Learn 1 new productivity technique/tuần",
+      "Saturday: skill building projects"
+    ],
+    "checkpoints": [
+      "Tuần 1: 3h daily deep work achieved",
+      "Tuần 2: Zero notification interruptions",
+      "Tuần 3: Complete 1 challenging project",
+      "Tuần 4: Mastered focus techniques"
+    ],
+    "target_hours": "3-4h deep work/ngày"
+  },
+  "month_3": {
+    "theme": "Health & Energy Optimization",
+    "core_focus": "Physical fitness và mental wellness",
+    "daily_habits": [
+      "30 phút exercise (3x/tuần gym, 2x cardio)",
+      "7-8h sleep strict schedule",
+      "Healthy meal prep",
+      "2L nước/ngày minimum",
+      "5 phút stretching mỗi 2h coding"
+    ],
+    "weekly_practices": [
+      "3 buổi gym (strength training)",
+      "2 buổi cardio (running/cycling)",
+      "Sunday meal prep",
+      "Health metrics tracking"
+    ],
+    "checkpoints": [
+      "Tuần 1: Stable exercise routine",
+      "Tuần 2: Sleep optimization complete",
+      "Tuần 3: Nutrition habits locked",
+      "Tuần 4: Energy levels significantly improved"
+    ],
+    "target_hours": "2-3h deep work + 1h fitness/ngày"
+  },
+  "month_4": {
+    "theme": "Skill Building & Side Projects",
+    "core_focus": "Learning new tech skills và build side projects",
+    "daily_habits": [
+      "1h learning new technology/framework",
+      "2h side project development",
+      "Code review & documentation",
+      "Tech reading 30 phút",
+      "GitHub contributions daily"
+    ],
+    "weekly_practices": [
+      "Complete 1 tutorial/course module",
+      "Deploy 1 feature to side project",
+      "Tech blog writing",
+      "Open source contributions"
+    ],
+    "checkpoints": [
+      "Tuần 1: Pick & start learning new tech stack",
+      "Tuần 2: Side project MVP planning",
+      "Tuần 3: First deployment/demo",
+      "Tuần 4: Skill assessment & portfolio update"
+    ],
+    "target_hours": "3h deep learning+coding/ngày"
+  },
+  "month_5": {
+    "theme": "Wealth & Career Growth",
+    "core_focus": "Career advancement và financial planning",
+    "daily_habits": [
+      "Job market research 30 phút",
+      "Network building activities",
+      "Financial planning/tracking",
+      "Professional skill development",
+      "LinkedIn optimization"
+    ],
+    "weekly_practices": [
+      "Apply to 3-5 jobs or client prospects",
+      "Update resume/portfolio",
+      "Financial review & budgeting",
+      "Industry networking events"
+    ],
+    "checkpoints": [
+      "Tuần 1: Career goals & salary research",
+      "Tuần 2: Portfolio & resume update",
+      "Tuần 3: Active job applications",
+      "Tuần 4: Interview preparation & negotiations"
+    ],
+    "target_hours": "2h career activities + 2h skill work/ngày"
+  },
+  "month_6": {
+    "theme": "Integration & Sustainability",
+    "core_focus": "Long-term sustainability và advanced optimization",
+    "daily_habits": [
+      "Balanced routine maintenance",
+      "Advanced productivity experiments",
+      "Mentoring others",
+      "Strategic planning",
+      "Continuous improvement"
+    ],
+    "weekly_practices": [
+      "Monthly planning & reflection",
+      "Habit optimization",
+      "Knowledge sharing",
+      "Long-term goal setting"
+    ],
+    "checkpoints": [
+      "Tuần 1: System evaluation & optimization",
+      "Tuần 2: Plan next 6 months",
+      "Tuần 3: Teaching/mentoring setup",
+      "Tuần 4: Celebration & new challenge prep"
+    ],
+    "target_hours": "Flexible 2-4h based on priorities"
+  }
+}

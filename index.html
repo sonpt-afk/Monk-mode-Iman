@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monk Mode Dashboard - Hệ thống theo dõi 6 tháng</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <h1>Monk Mode Dashboard</h1>
+                <div class="header-controls">
+                    <button class="btn btn--outline btn--sm" id="themeToggle">🌙 Dark</button>
+                    <button class="btn btn--primary btn--sm" id="exportData">📊 Export Data</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-tab="overview">📊 Tổng Quan</button>
+            <button class="nav-tab" data-tab="daily">📝 Hàng Ngày</button>
+            <button class="nav-tab" data-tab="weekly">📅 Tuần</button>
+            <button class="nav-tab" data-tab="monthly">🎯 Tháng</button>
+        </nav>
+
+        <!-- Overview Tab -->
+        <div id="overview" class="tab-content active">
+            <!-- User Profile Card -->
+            <div class="profile-card card">
+                <div class="card__body">
+                    <div class="profile-info">
+                        <div class="profile-avatar">👨‍💻</div>
+                        <div class="profile-details">
+                            <h3>Web Developer</h3>
+                            <div class="profile-stats">
+                                <span class="stat-item">Tháng <span id="currentMonth">1</span>/6</span>
+                                <span class="stat-item">Ngày: <span id="daysCompleted">5</span></span>
+                                <span class="stat-item">Streak: <span id="streakCount">3</span> ngày</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Today's Progress -->
+            <div class="today-section">
+                <h2>Tiến độ hôm nay</h2>
+                <div class="metrics-grid">
+                    <div class="metric-card card">
+                        <div class="card__body">
+                            <div class="metric-header">
+                                <h4>Deep Work</h4>
+                                <span class="metric-target">Mục tiêu: 3h</span>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="progress-ring">
+                                    <svg class="progress-circle">
+                                        <circle cx="50" cy="50" r="40" class="progress-bg"></circle>
+                                        <circle cx="50" cy="50" r="40" class="progress-fill" id="deepWorkCircle"></circle>
+                                    </svg>
+                                    <div class="progress-text">
+                                        <span class="progress-value" id="deepWorkValue">0.0</span>
+                                        <span class="progress-unit">h</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card card">
+                        <div class="card__body">
+                            <div class="metric-header">
+                                <h4>Screen Time</h4>
+                                <span class="metric-target">Mục tiêu: <1h</span>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="progress-ring">
+                                    <svg class="progress-circle">
+                                        <circle cx="50" cy="50" r="40" class="progress-bg"></circle>
+                                        <circle cx="50" cy="50" r="40" class="progress-fill" id="screenTimeCircle"></circle>
+                                    </svg>
+                                    <div class="progress-text">
+                                        <span class="progress-value" id="screenTimeValue">0.0</span>
+                                        <span class="progress-unit">h</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card card">
+                        <div class="card__body">
+                            <div class="metric-header">
+                                <h4>Tập thể dục</h4>
+                                <span class="metric-target">5 buổi/tuần</span>
+                            </div>
+                            <div class="exercise-status">
+                                <div class="exercise-indicator" id="exerciseIndicator">
+                                    <span class="status-icon">💪</span>
+                                    <span class="status-text" id="exerciseStatus">Chưa hoàn thành</span>
+                                </div>
+                                <input type="text" id="exerciseType" class="form-control" placeholder="Loại tập luyện">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card card">
+                        <div class="card__body">
+                            <div class="metric-header">
+                                <h4>Giấc ngủ</h4>
+                                <span class="metric-target">7-8h</span>
+                            </div>
+                            <div class="sleep-metrics">
+                                <div class="sleep-hours">
+                                    <span class="sleep-value" id="sleepValue">0.0</span>h
+                                </div>
+                                <div class="sleep-quality">
+                                    <span>Chất lượng: <span id="sleepQuality">0</span>/100</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weekly Chart -->
+            <div class="chart-section">
+                <h2>Xu hướng 7 ngày qua</h2>
+                <div class="chart-container card">
+                    <div class="card__body">
+                        <div style="position: relative; height: 300px;">
+                            <canvas id="weeklyChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Motivational Quote -->
+            <div class="quote-section">
+                <div class="quote-card card">
+                    <div class="card__body">
+                        <blockquote id="dailyQuote">
+                            "Discipline is choosing between what you want now and what you want most."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daily Tab -->
+        <div id="daily" class="tab-content">
+            <div class="daily-form">
+                <h2>Ghi nhật ký hôm nay</h2>
+                <form id="dailyLogForm" class="daily-form-grid">
+                    <div class="form-group">
+                        <label class="form-label">Deep Work (giờ)</label>
+                        <input type="number" id="dailyDeepWork" class="form-control" min="0" max="12" step="0.1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Screen Time (giờ)</label>
+                        <input type="number" id="dailyScreenTime" class="form-control" min="0" max="24" step="0.1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Tập thể dục</label>
+                        <select id="dailyExercise" class="form-control">
+                            <option value="false">Chưa tập</option>
+                            <option value="true">Đã tập</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Loại tập luyện</label>
+                        <input type="text" id="dailyExerciseType" class="form-control" placeholder="VD: Gym - Upper body">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Giờ ngủ</label>
+                        <input type="number" id="dailySleep" class="form-control" min="0" max="12" step="0.1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Chất lượng giấc ngủ (1-100)</label>
+                        <input type="number" id="dailySleepQuality" class="form-control" min="1" max="100">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Mood (1-10)</label>
+                        <input type="number" id="dailyMood" class="form-control" min="1" max="10">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Thiền định</label>
+                        <select id="dailyMeditation" class="form-control">
+                            <option value="false">Chưa thiền</option>
+                            <option value="true">Đã thiền</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label class="form-label">Ghi chú</label>
+                        <textarea id="dailyNotes" class="form-control" rows="3" placeholder="Cảm nhận và suy ngẫm về ngày hôm nay..."></textarea>
+                    </div>
+                    
+                    <div class="form-actions full-width">
+                        <button type="submit" class="btn btn--primary">Lưu ngày hôm nay</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Weekly Tab -->
+        <div id="weekly" class="tab-content">
+            <h2>Tổng quan tuần</h2>
+            <div class="weekly-overview">
+                <div class="week-stats card">
+                    <div class="card__body">
+                        <h3>Thống kê tuần này</h3>
+                        <div class="week-metrics">
+                            <div class="week-metric">
+                                <span class="metric-label">Deep Work trung bình</span>
+                                <span class="metric-value" id="weeklyDeepWork">0.0h</span>
+                            </div>
+                            <div class="week-metric">
+                                <span class="metric-label">Buổi tập trong tuần</span>
+                                <span class="metric-value" id="weeklyExercise">0/7</span>
+                            </div>
+                            <div class="week-metric">
+                                <span class="metric-label">Giấc ngủ trung bình</span>
+                                <span class="metric-value" id="weeklySleep">0.0h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="weekly-chart card">
+                    <div class="card__body">
+                        <h3>Biểu đồ tuần</h3>
+                        <div style="position: relative; height: 300px;">
+                            <canvas id="weeklyDetailChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monthly Tab -->
+        <div id="monthly" class="tab-content">
+            <h2>Mốc quan trọng theo tháng</h2>
+            <div class="monthly-milestones" id="monthlyMilestones">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Achievement Modal -->
+        <div id="achievementModal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>🎉 Chúc mừng!</h3>
+                    <button class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p id="achievementText"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

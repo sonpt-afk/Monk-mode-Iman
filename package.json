@@ -1,0 +1,13 @@
+{
+  "name": "monk-mode-dashboard",
+  "version": "1.0.0",
+  "description": "A dashboard to track the 6-month Monk Mode journey.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@vercel/kv": "^1.0.1",
+    "express": "^4.18.2"
+  }
+}

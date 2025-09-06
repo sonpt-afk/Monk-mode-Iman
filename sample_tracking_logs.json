@@ -1,0 +1,52 @@
+{
+  "daily_logs": [
+    {
+      "date": "2025-09-06",
+      "deep_work_hours": 2.5,
+      "phone_screen_time": 0.8,
+      "exercise_done": true,
+      "sleep_hours": 7.5,
+      "sleep_quality": 85,
+      "mood_score": 8,
+      "notes": "First day of Monk Mode. Woke up at 6AM successfully. Phone usage under control."
+    },
+    {
+      "date": "2025-09-07",
+      "deep_work_hours": 3.2,
+      "phone_screen_time": 0.6,
+      "exercise_done": true,
+      "sleep_hours": 8.0,
+      "sleep_quality": 90,
+      "mood_score": 8.5,
+      "notes": "Deep work block worked well. Focused on Redux tutorial. Gym session completed."
+    }
+  ],
+  "weekly_summaries": [
+    {
+      "week": 1,
+      "start_date": "2025-09-01",
+      "end_date": "2025-09-07",
+      "metrics": {
+        "avg_deep_work": 2.8,
+        "avg_phone_time": 0.7,
+        "exercise_days": 5,
+        "avg_sleep": 7.8,
+        "avg_mood": 8.2
+      },
+      "achievements": [
+        "Maintained 6AM wake-up 7/7 days",
+        "Phone usage under 1h for 6/7 days",
+        "Completed 5 workout sessions",
+        "Started side project planning"
+      ],
+      "challenges": [
+        "Sunday evening phone usage spike",
+        "Wednesday deep work interrupted by meetings"
+      ],
+      "next_week_focus": [
+        "Improve Sunday routine",
+        "Block meeting-free mornings"
+      ]
+    }
+  ]
+}

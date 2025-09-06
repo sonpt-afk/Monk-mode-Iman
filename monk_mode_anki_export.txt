@@ -1,0 +1,147 @@
+4 trụ cột của Dopamine Detox trong tháng 1 là gì?	1. Phone screen time max 1h/ngày
+2. Không YouTube/social media
+3. Sleep schedule 10PM-6AM
+4. Meditation 10 phút/ngày	MonkMode,Month1
+Tại sao developers cần dopamine reset?	• Modern life overstimulates dopamine receptors
+• Cần 23 phút để recover focus sau interruption
+• Dopamine addiction khiến deep work trở nên boring
+• Social media/notifications phân mảnh attention	MonkMode,Month1
+Deep work block trong tháng 1 nên bao lâu?	Target: 2-3h/ngày
+• Bắt đầu với 90 phút blocks
+• Gradually tăng lên 2h
+• Phone airplane mode
+• No interruptions allowed	MonkMode,Month1
+Checkpoints của tuần 4 tháng 1 là gì?	Complete dopamine reset achieved:
+• Stable 6AM wake-up
+• Phone usage <1h consistently
+• 2h deep work blocks daily
+• Feel comfortable without constant stimulation	MonkMode,Month1
+Morning routine tối ưu cho Web Developer là gì?	6:00-6:15: Wake + hydration (no phone)
+6:15-6:25: Meditation
+6:25-7:15: Exercise
+7:15-7:45: Shower + breakfast
+7:45-8:30: Deep work block 1	MonkMode,Month1
+Tại sao context switching nguy hiểm cho developers?	• Reduces IQ temporarily by 10 points
+• Takes 23 minutes to regain focus
+• 45% tech workers get <4h flow state daily
+• Multitasking is a myth - brain actually task-switches	MonkMode,Month2
+Deep work target của tháng 2 là bao nhiêu?	3-4h deep work/ngày:
+• Chia thành 2 sessions (2h + 1-2h)
+• Use Pomodoro for complex tasks
+• Phone airplane mode
+• End-of-day shutdown ritual	MonkMode,Month2
+Environmental design principles cho focus là gì?	• Single monitor setup (avoid multi-monitor distraction)
+• Clean desktop, minimal icons
+• Noise-canceling headphones
+• Dedicated workspace separate from relaxation
+• Full-screen mode during deep work	MonkMode,Month2
+Email và communication boundaries trong tháng 2?	• Email: Check chỉ 2 lần/ngày
+• Slack/Teams: Batch check mỗi 2h
+• Turn off desktop notifications
+• Use Focus modes on OS
+• Communicate boundaries to team	MonkMode,Month2
+Weekly practices của tháng 2 include gì?	• Weekly deep work audit
+• Optimize workspace setup
+• Learn 1 new productivity technique/week
+• Saturday: skill building projects
+• Review và adjust system	MonkMode,Month2
+Developer health crisis statistics nào cần biết?	• Sedentary work increases heart disease risk by 147%
+• Eye strain affects 90% of computer workers
+• Poor posture leads to chronic pain
+• Sleep deprivation reduces cognitive performance by 40%	MonkMode,Month3
+Energy equation cho developers là gì?	High Energy = Exercise + Sleep + Nutrition + Recovery
+• 30-45min daily exercise
+• 7-8h consistent sleep schedule
+• Meal prep + hydration
+• Posture breaks every 50min	MonkMode,Month3
+Weekly exercise schedule ideal cho developers?	Mon/Wed/Fri: Gym (45min)
+Tue/Thu/Sat: Cardio (30min)
+Sunday: Rest or yoga
+• Morning workout = no scheduling conflicts
+• 5-6 sessions/week target	MonkMode,Month3
+Sleep optimization strategy là gì?	• Consistent 10PM-6AM schedule
+• No screens 1h before bed
+• Cool (18-20°C), dark, quiet room
+• Phone charged outside bedroom
+• Blue light filters on devices	MonkMode,Month3
+Nutrition habits cho sustained energy?	• Sunday meal prep (2h investment)
+• Healthy snacks: nuts, fruits, yogurt
+• Max 2 cups coffee before 2PM
+• 2.5L water daily
+• Optional: 16:8 intermittent fasting	MonkMode,Month3
+Tutorial hell problem và solution là gì?	Problem: 80% developers stuck in passive learning
+Solution:
+• 1h learning + 2h building daily
+• Every tutorial → deployed project
+• Focus on application, not consumption
+• Build projects that solve YOUR problems	MonkMode,Month4
+Side project strategy tối ưu?	• Pick projects solving your own problems
+• MVP in 2-4 weeks, not months
+• Use modern stack for cutting-edge skills
+• Document everything for portfolio
+• Launch imperfect > perfect nothing	MonkMode,Month4
+Compound learning concept là gì?	• Each skill multiplies previous skills' effectiveness
+• T-shaped developer: deep in one, broad in many
+• Full-stack knowledge increases value
+• Communication skills 10x technical abilities
+• Choose skills that build on each other	MonkMode,Month4
+GitHub và portfolio best practices?	• Daily commits streak
+• Clear README for each project
+• Live demo links
+• Modern tech stack usage
+• Code quality over quantity
+• Open source contributions	MonkMode,Month4
+Learning targets cho tháng 4?	Weekly: Complete 1 tutorial/course module
+Daily: 1h learning + 2h building
+Monthly: 1 new significant technology mastered
+Goal: Can implement what learned in real project	MonkMode,Month4
+Developer career ceiling reality?	• Average salary plateaus after 5-7 years
+• Top 10% earn 3-5x more through strategic moves
+• Network effects > pure technical skill
+• Market timing beats perfect coding
+• Your positioning determines ceiling	MonkMode,Month5
+Network = Net Worth principles?	• 80% jobs never posted publicly
+• Referrals have 10x higher success rate
+• Twitter/LinkedIn engagement = visibility
+• Help others first, build reciprocal relationships
+• People hire people they know and trust	MonkMode,Month5
+Salary negotiation mindset và tactics?	• Negotiation is expected, not rude
+• Research market rates + 20% starting position
+• Total compensation > base salary
+• Walk-away power = negotiation strength
+• Practice as learnable skill	MonkMode,Month5
+Daily career building activities?	• 30min job market research
+• LinkedIn optimization
+• Network building activities
+• Professional skill development
+• Financial planning/tracking	MonkMode,Month5
+Monthly career targets?	Week 1: Career goals & salary research
+Week 2: Portfolio & resume update
+Week 3: Active job applications
+Week 4: Interview prep & negotiations
+Goal: Progress toward career advancement	MonkMode,Month5
+Monk Mode graduation achievements?	• Built systems creating compound results
+• Focus ability = competitive advantage
+• Health habits = sustainable performance
+• Portfolio & network opened opportunities
+• Now in top 5% of disciplined developers	MonkMode,Month6
+Building sustainable systems principles?	• Habits become automatic after 66 days average
+• 80% success from 20% activities
+• Flexibility prevents system collapse
+• Regular reviews maintain effectiveness
+• Sustainable systems > perfect systems	MonkMode,Month6
+Teaching và mentoring benefits?	• Teaching deepens your own understanding
+• Creates valuable professional relationships
+• Sharing journey inspires others
+• Leadership skills multiply career opportunities
+• Your transformation can transform others	MonkMode,Month6
+Long-term habit maintenance strategy?	• Focus on 20% high-impact activities
+• Build flexibility into systems
+• Monthly reviews và adjustments
+• Prepare for setbacks và recovery
+• Celebrate consistency over perfection	MonkMode,Month6
+Next level planning principles?	• Use lessons learned for next 6 months
+• Advanced productivity experiments
+• Strategic planning for bigger goals
+• Continuous improvement mindset
+• Pay it forward through teaching others	MonkMode,Month6

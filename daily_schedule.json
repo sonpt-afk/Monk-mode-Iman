@@ -1,0 +1,115 @@
+{
+  "pre_work": {
+    "time": "06:00 - 08:30",
+    "duration": "2h 30m",
+    "activities": [
+      {
+        "time": "06:00-06:15",
+        "activity": "Wake up + Hydration",
+        "details": "Uống 500ml nước, không check phone"
+      },
+      {
+        "time": "06:15-06:25",
+        "activity": "Meditation/Mindfulness",
+        "details": "10 phút thiền hoặc breathing exercise"
+      },
+      {
+        "time": "06:25-07:15",
+        "activity": "Exercise",
+        "details": "Gym (T3,5,7) hoặc Cardio (T2,4,6). Chủ nhật rest/yoga"
+      },
+      {
+        "time": "07:15-07:45",
+        "activity": "Shower + Breakfast",
+        "details": "Healthy breakfast, prep for work"
+      },
+      {
+        "time": "07:45-08:30",
+        "activity": "Deep Work Block 1",
+        "details": "Side project hoặc learning. Phone airplane mode"
+      }
+    ]
+  },
+  "work_hours": {
+    "time": "09:00 - 17:30",
+    "duration": "8h 30m",
+    "activities": [
+      {
+        "time": "09:00-09:15",
+        "activity": "Work Planning",
+        "details": "Review daily goals, prioritize tasks"
+      },
+      {
+        "time": "09:15-11:15",
+        "activity": "Deep Work Block 2",
+        "details": "Most complex coding tasks. No interruptions"
+      },
+      {
+        "time": "11:15-11:30",
+        "activity": "Break + Movement",
+        "details": "Walk, stretch, hydrate"
+      },
+      {
+        "time": "11:30-12:30",
+        "activity": "Meetings/Collaboration",
+        "details": "Standups, code reviews, team discussions"
+      },
+      {
+        "time": "12:30-13:30",
+        "activity": "Lunch Break",
+        "details": "Healthy meal, walk outside, no work talk"
+      },
+      {
+        "time": "13:30-15:30",
+        "activity": "Deep Work Block 3",
+        "details": "Implementation, testing, documentation"
+      },
+      {
+        "time": "15:30-16:00",
+        "activity": "Admin/Communication",
+        "details": "Emails, Slack, quick updates"
+      },
+      {
+        "time": "16:00-17:00",
+        "activity": "Learning/Improvement",
+        "details": "Tech articles, courses, code refactoring"
+      },
+      {
+        "time": "17:00-17:30",
+        "activity": "Work Shutdown",
+        "details": "Day review, tomorrow planning, close all apps"
+      }
+    ]
+  },
+  "post_work": {
+    "time": "18:00 - 22:00",
+    "duration": "4h",
+    "activities": [
+      {
+        "time": "18:00-19:00",
+        "activity": "Personal Time",
+        "details": "Commute, decompress, change mindset"
+      },
+      {
+        "time": "19:00-20:00",
+        "activity": "Dinner + Social",
+        "details": "Healthy dinner, family/friends time"
+      },
+      {
+        "time": "20:00-21:00",
+        "activity": "Personal Projects",
+        "details": "Side projects, learning, hobbies (optional)"
+      },
+      {
+        "time": "21:00-21:30",
+        "activity": "Reflection/Planning",
+        "details": "Journaling, next day prep, gratitude"
+      },
+      {
+        "time": "21:30-22:00",
+        "activity": "Wind Down",
+        "details": "Reading, light stretching, no screens"
+      }
+    ]
+  }
+}

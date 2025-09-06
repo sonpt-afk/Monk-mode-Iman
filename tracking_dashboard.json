@@ -1,0 +1,59 @@
+{
+  "daily_tracking": {
+    "deep_work_hours": {
+      "target": "3 hours/day",
+      "measurement": "Pomodoro timer + time tracking app",
+      "success_criteria": "≥2.5h considered success"
+    },
+    "gym_fitness": {
+      "target": "5-6 sessions/week (30-45 min each)",
+      "measurement": "Workout app or gym check-ins",
+      "success_criteria": "≥4 sessions/week minimum"
+    },
+    "sleep_quality": {
+      "target": "7-8 hours, 10PM-6AM schedule",
+      "measurement": "Sleep tracking app or smartwatch",
+      "success_criteria": "Sleep score ≥80, consistent timing"
+    },
+    "social_media_detox": {
+      "target": "Max 1h phone screen time, no social during work",
+      "measurement": "Screen Time (iOS) or Digital Wellbeing (Android)",
+      "success_criteria": "≤1h phone, 0 social during 9-17h"
+    }
+  },
+  "weekly_milestones": {
+    "side_project_progress": {
+      "target": "1 major feature or 3 small features/week",
+      "measurement": "GitHub commits, deployed features",
+      "success_criteria": "Visible progress toward launch"
+    },
+    "learning_goals": {
+      "target": "Complete 1 course module or tutorial",
+      "measurement": "Course progress, certificates earned",
+      "success_criteria": "Can implement what learned in project"
+    },
+    "network_building": {
+      "target": "3 professional interactions/week",
+      "measurement": "LinkedIn messages, meetups attended, job applications",
+      "success_criteria": "Growing professional network"
+    }
+  },
+  "monthly_assessments": {
+    "skill_development": {
+      "measurement": "Portfolio updates, new technologies learned",
+      "success_criteria": "1 new significant skill per month"
+    },
+    "career_advancement": {
+      "measurement": "Job applications, interviews, salary negotiations",
+      "success_criteria": "Progress toward career goals"
+    },
+    "health_improvements": {
+      "measurement": "Energy levels, weight, fitness benchmarks",
+      "success_criteria": "Consistent improvement or maintenance"
+    },
+    "financial_growth": {
+      "measurement": "Savings rate, side income, investment returns",
+      "success_criteria": "10%+ increase in net worth"
+    }
+  }
+}

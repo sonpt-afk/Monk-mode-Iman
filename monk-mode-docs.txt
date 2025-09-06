@@ -1,0 +1,322 @@
+# MONK MODE CHO WEB DEVELOPER: 6-MONTH TRANSFORMATION GUIDE
+
+## Tổng Quan
+Hệ thống Monk Mode 6 tháng được thiết kế đặc biệt cho Web Developer full-time, dựa trên nghiên cứu từ dopamine detox, deep work principles, và best practices của tech industry.
+
+## CURRICULUM 6 THÁNG
+
+### THÁNG 1: FOUNDATION & DISCIPLINE RESET
+**Focus:** Dopamine detox và thiết lập thói quen cơ bản
+**Target:** 2-3h deep work/ngày
+
+#### Daily Habits:
+- ✅ 1h screen time điện thoại tối đa
+- ✅ 10 phút thiền định mỗi sáng
+- ✅ Không YouTube/social media (chỉ work-related)
+- ✅ Wake up 6:00 AM - Sleep 10:00 PM
+- ✅ Daily journaling 5 phút
+
+#### Weekly Practices:
+- Plan tuần vào Chủ nhật
+- Review progress thứ 6
+- Deep work block 2h x 5 ngày/tuần
+- 1 buổi hoàn toàn offline trong cuối tuần
+
+#### Checkpoints:
+- Tuần 1: Thiết lập basic routine
+- Tuần 2: Stable wake-up time
+- Tuần 3: 2h deep work consistency
+- Tuần 4: Complete dopamine reset
+
+---
+
+### THÁNG 2: DEEP WORK & FOCUS MASTERY
+**Focus:** Tối ưu khả năng concentration và productivity
+**Target:** 3-4h deep work/ngày
+
+#### Daily Habits:
+- ✅ 3h deep work blocks (chia 2 sessions)
+- ✅ Pomodoro technique cho complex tasks
+- ✅ Email check 2 lần/ngày max
+- ✅ Phone airplane mode trong work hours
+- ✅ End-of-day shutdown ritual
+
+#### Weekly Practices:
+- Weekly deep work audit
+- Optimize workspace setup
+- Learn 1 new productivity technique/tuần
+- Saturday: skill building projects
+
+#### Checkpoints:
+- Tuần 1: 3h daily deep work achieved
+- Tuần 2: Zero notification interruptions
+- Tuần 3: Complete 1 challenging project
+- Tuần 4: Mastered focus techniques
+
+---
+
+### THÁNG 3: HEALTH & ENERGY OPTIMIZATION
+**Focus:** Physical fitness và mental wellness
+**Target:** 2-3h deep work + 1h fitness/ngày
+
+#### Daily Habits:
+- ✅ 30 phút exercise (3x/tuần gym, 2x cardio)
+- ✅ 7-8h sleep strict schedule
+- ✅ Healthy meal prep
+- ✅ 2L nước/ngày minimum
+- ✅ 5 phút stretching mỗi 2h coding
+
+#### Weekly Practices:
+- 3 buổi gym (strength training)
+- 2 buổi cardio (running/cycling)
+- Sunday meal prep
+- Health metrics tracking
+
+#### Checkpoints:
+- Tuần 1: Stable exercise routine
+- Tuần 2: Sleep optimization complete
+- Tuần 3: Nutrition habits locked
+- Tuần 4: Energy levels significantly improved
+
+---
+
+### THÁNG 4: SKILL BUILDING & SIDE PROJECTS
+**Focus:** Learning new tech skills và build side projects
+**Target:** 3h deep learning+coding/ngày
+
+#### Daily Habits:
+- ✅ 1h learning new technology/framework
+- ✅ 2h side project development
+- ✅ Code review & documentation
+- ✅ Tech reading 30 phút
+- ✅ GitHub contributions daily
+
+#### Weekly Practices:
+- Complete 1 tutorial/course module
+- Deploy 1 feature to side project
+- Tech blog writing
+- Open source contributions
+
+#### Checkpoints:
+- Tuần 1: Pick & start learning new tech stack
+- Tuần 2: Side project MVP planning
+- Tuần 3: First deployment/demo
+- Tuần 4: Skill assessment & portfolio update
+
+---
+
+### THÁNG 5: WEALTH & CAREER GROWTH
+**Focus:** Career advancement và financial planning
+**Target:** 2h career activities + 2h skill work/ngày
+
+#### Daily Habits:
+- ✅ Job market research 30 phút
+- ✅ Network building activities
+- ✅ Financial planning/tracking
+- ✅ Professional skill development
+- ✅ LinkedIn optimization
+
+#### Weekly Practices:
+- Apply to 3-5 jobs or client prospects
+- Update resume/portfolio
+- Financial review & budgeting
+- Industry networking events
+
+#### Checkpoints:
+- Tuần 1: Career goals & salary research
+- Tuần 2: Portfolio & resume update
+- Tuần 3: Active job applications
+- Tuần 4: Interview preparation & negotiations
+
+---
+
+### THÁNG 6: INTEGRATION & SUSTAINABILITY
+**Focus:** Long-term sustainability và advanced optimization
+**Target:** Flexible 2-4h based on priorities
+
+#### Daily Habits:
+- ✅ Balanced routine maintenance
+- ✅ Advanced productivity experiments
+- ✅ Mentoring others
+- ✅ Strategic planning
+- ✅ Continuous improvement
+
+#### Weekly Practices:
+- Monthly planning & reflection
+- Habit optimization
+- Knowledge sharing
+- Long-term goal setting
+
+#### Checkpoints:
+- Tuần 1: System evaluation & optimization
+- Tuần 2: Plan next 6 months
+- Tuần 3: Teaching/mentoring setup
+- Tuần 4: Celebration & new challenge prep
+
+---
+
+## DAILY SCHEDULE CHO WEB DEVELOPER
+
+### PRE-WORK (06:00 - 08:30)
+- **06:00-06:15:** Wake up + Hydration (uống 500ml nước, không check phone)
+- **06:15-06:25:** Meditation/Mindfulness (10 phút thiền hoặc breathing exercise)
+- **06:25-07:15:** Exercise (Gym T3,5,7 hoặc Cardio T2,4,6. Chủ nhật rest/yoga)
+- **07:15-07:45:** Shower + Breakfast (healthy breakfast, prep for work)
+- **07:45-08:30:** Deep Work Block 1 (side project hoặc learning, phone airplane mode)
+
+### WORK HOURS (09:00 - 17:30)
+- **09:00-09:15:** Work Planning (review daily goals, prioritize tasks)
+- **09:15-11:15:** Deep Work Block 2 (most complex coding tasks, no interruptions)
+- **11:15-11:30:** Break + Movement (walk, stretch, hydrate)
+- **11:30-12:30:** Meetings/Collaboration (standups, code reviews, team discussions)
+- **12:30-13:30:** Lunch Break (healthy meal, walk outside, no work talk)
+- **13:30-15:30:** Deep Work Block 3 (implementation, testing, documentation)
+- **15:30-16:00:** Admin/Communication (emails, Slack, quick updates)
+- **16:00-17:00:** Learning/Improvement (tech articles, courses, code refactoring)
+- **17:00-17:30:** Work Shutdown (day review, tomorrow planning, close all apps)
+
+### POST-WORK (18:00 - 22:00)
+- **18:00-19:00:** Personal Time (commute, decompress, change mindset)
+- **19:00-20:00:** Dinner + Social (healthy dinner, family/friends time)
+- **20:00-21:00:** Personal Projects (side projects, learning, hobbies - optional)
+- **21:00-21:30:** Reflection/Planning (journaling, next day prep, gratitude)
+- **21:30-22:00:** Wind Down (reading, light stretching, no screens)
+
+---
+
+## SYSTEM CHỐNG DISTRACTION
+
+### PHONE MANAGEMENT
+**Morning:**
+- Phone ở airplane mode until 8:30 AM
+- No social media check trong 2h đầu
+- Use physical alarm clock, không phone beside bed
+
+**Work Hours:**
+- Phone ở drawer hoặc khác room trong deep work
+- Notifications OFF cho tất cả apps except calls
+- Use website blockers: Cold Turkey, Freedom
+- Check messages chỉ 2 times: 12:30 và 16:00
+
+**Evening:**
+- No phone 1h before sleep (21:00 onwards)
+- Charge phone outside bedroom
+- Use Do Not Disturb 21:00-07:00
+
+### COMPUTER DISTRACTIONS
+**Browser Control:**
+- Block social media: Facebook, Instagram, TikTok
+- Block news sites during work hours
+- YouTube chỉ cho work-related content
+- Use browser extensions: StayFocusd, BlockSite
+
+**Communication Boundaries:**
+- Slack/Teams: Check mỗi 2h, không real-time
+- Email: Batch process 2 lần/ngày
+- Turn off desktop notifications
+- Use Focus modes trên MacOS/Windows
+
+**Workspace Optimization:**
+- 1 monitor setup (avoid multi-monitor distraction)
+- Clean desktop, minimal icons
+- Close unused applications
+- Use full-screen mode cho deep work
+
+---
+
+## HEALTH CHECKLIST
+
+### DAILY PHYSICAL HABITS
+- **Hydration:** 2.5L water/day (passive tracking)
+- **Posture Breaks:** Every 50 minutes (2 min stand/stretch)
+- **Eye Rest:** 20-20-20 rule every 20 minutes
+- **Exercise:** 30-45 min/day (morning workout preferred)
+
+### NUTRITION OPTIMIZATION
+- **Meal Prep:** Sunday batch cooking (2 hours)
+- **Healthy Snacking:** Nuts, fruits, yogurt thay vì chips/candy
+- **Caffeine Management:** Max 2 cups coffee before 2PM
+- **Intermittent Fasting:** 16:8 window (optional: eat 12PM-8PM)
+
+### SLEEP OPTIMIZATION
+- **Schedule:** Sleep 10PM, Wake 6AM consistently
+- **Blue Light:** No screens 1h before bed, use f.lux
+- **Environment:** Cool (18-20°C), dark, quiet room
+
+### WEEKLY EXERCISE SCHEDULE
+- **Monday:** Gym - Upper body (45 min)
+- **Tuesday:** Cardio - Running/Cycling (30 min)
+- **Wednesday:** Gym - Lower body (45 min)
+- **Thursday:** Cardio - HIIT/Swimming (30 min)
+- **Friday:** Gym - Full body (45 min)
+- **Saturday:** Active recovery - Yoga/Walk (30 min)
+- **Sunday:** Rest or light activity
+
+---
+
+## TRACKING DASHBOARD
+
+### DAILY METRICS
+- **Deep Work Hours:** Target 3h/day (≥2.5h = success)
+- **Gym/Fitness:** Target 5-6 sessions/week (≥4 = minimum)
+- **Sleep Quality:** 7-8h, score ≥80 via sleep app
+- **Phone Usage:** ≤1h screen time, 0 social during work hours
+
+### WEEKLY MILESTONES
+- **Side Project:** 1 major feature or 3 small features
+- **Learning:** Complete 1 course module or tutorial
+- **Networking:** 3 professional interactions
+
+### MONTHLY ASSESSMENTS
+- **Skills:** 1 new significant technology mastered
+- **Career:** Job applications, interviews, portfolio updates
+- **Health:** Energy levels, fitness benchmarks
+- **Finance:** 10%+ increase in savings/net worth
+
+---
+
+## TOOLS & APPS RECOMMENDED
+
+### PRODUCTIVITY
+- **Focus:** Freedom, Cold Turkey, Forest app
+- **Time Tracking:** Toggl, RescueTime, Clockify
+- **Task Management:** Notion, Todoist, Trello
+
+### HEALTH & FITNESS
+- **Sleep:** Sleep Cycle, AutoSleep (Apple Watch)
+- **Exercise:** Nike Training Club, Strava, MyFitnessPal
+- **Meditation:** Headspace, Calm, Insight Timer
+
+### LEARNING & DEVELOPMENT
+- **Coding:** GitHub, Codecademy, Pluralsight
+- **Reading:** Pocket, Blinkist, Kindle
+- **Note-taking:** Obsidian, Roam Research, Anki
+
+---
+
+## SUCCESS TIPS
+
+### Week 1-2: Foundation
+- Focus on establishing wake-up time first
+- Don't try to implement everything at once
+- Track basic metrics: sleep, phone usage, exercise
+
+### Week 3-4: Momentum
+- Add deep work blocks gradually
+- Optimize workspace for minimal distractions
+- Start meal prep routine
+
+### Month 2+: Optimization
+- Fine-tune based on what works
+- Add side projects when routine is solid
+- Begin networking and career activities
+
+### Long-term Sustainability
+- Allow flexibility on weekends
+- Plan for setbacks and recovery
+- Regular monthly reviews and adjustments
+- Celebrate small wins consistently
+
+---
+
+**Remember:** This is a marathon, not a sprint. Consistency beats perfection. Start with 2-3 habits and gradually build up to the full system over 6 months.
