@@ -27,6 +27,7 @@
             <button class="nav-tab" data-tab="daily">📝 Hàng Ngày</button>
             <button class="nav-tab" data-tab="weekly">📅 Tuần</button>
             <button class="nav-tab" data-tab="monthly">🎯 Tháng</button>
+            <button class="nav-tab" data-tab="memory-bank">🧠 Memory Bank</button>
         </nav>
 
         <!-- Overview Tab -->
@@ -256,6 +257,39 @@
             <h2>Mốc quan trọng theo tháng</h2>
             <div class="monthly-milestones" id="monthlyMilestones">
                 <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Memory Bank Tab -->
+        <div id="memory-bank" class="tab-content">
+            <h2>Memory Bank</h2>
+            <div class="memory-bank-container">
+                <div class="memory-form card">
+                    <div class="card__body">
+                        <h3>Add a New Memory</h3>
+                        <form id="memoryForm">
+                            <div class="form-group">
+                                <label class="form-label">Title</label>
+                                <input type="text" id="memoryTitle" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Content</label>
+                                <textarea id="memoryContent" class="form-control" rows="3" required></textarea>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn--primary">Save Memory</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="memory-list card">
+                    <div class="card__body">
+                        <h3>Stored Memories</h3>
+                        <div id="memoryListContainer">
+                            <!-- Memories will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

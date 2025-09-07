@@ -52,8 +52,9 @@ async function getDatabase() {
         daily_schedule: JSON.parse(await fs.readFile(path.join(__dirname, daily_schedule.json'), 'utf-8')),
         health_checklist: JSON.parse(await fs.readFile(path.join(__dirname, health_checklist.json'), 'utf-8')),
         anti_distraction_system: JSON.parse(await fs.readFile(path.join(__dirname, anti_distraction_system.json'), 'utf-8')),
-        tracking_dashboard: JSON.parse(await fs.readFile(path.join(__dirname, tracking_dashboard.json'), 'utf-8')),
-        monk_mode_flashcards: JSON.parse(await fs.readFile(path.join(__dirname, monk_mode_flashcards.json'), 'utf-8'))
+        tracking_dashboard: JSON.parse(await fs.readFile(path.join(__dirname, 'tracking_dashboard.json'), 'utf-8')),
+        monk_mode_flashcards: JSON.parse(await fs.readFile(path.join(__dirname, 'monk_mode_flashcards.json'), 'utf-8')),
+        memory_bank: JSON.parse(await fs.readFile(path.join(__dirname, 'memory_bank.json'), 'utf-8'))
     };
 
     await kv.set('db', initialDb);
@@ -100,6 +101,38 @@ app.post('/api/log', async (req, res) => {
     } catch (error) {
         console.error('Error saving log:', error);
         res.status(500).json({ message: 'Error saving log' });
+    }
+});
+
+// API to get memories
+app.get('/api/memories', async (req, res) => {
+    try {
+        const db = await getDatabase();
+        res.json(db.memory_bank || []);
+    } catch (error) {
+        console.error('Error getting memories:', error);
+        res.status(500).json({ message: 'Error getting memories' });
+    }
+});
+
+// API to add a memory
+app.post('/api/memories', async (req, res) => {
+    try {
+        const newMemory = req.body;
+        const db = await getDatabase();
+
+        if (!db.memory_bank) {
+            db.memory_bank = [];
+        }
+
+        db.memory_bank.push(newMemory);
+
+        await kv.set('db', db);
+        res.json({ message: 'Memory saved successfully', data: db.memory_bank });
+
+    } catch (error) {
+        console.error('Error saving memory:', error);
+        res.status(500).json({ message: 'Error saving memory' });
     }
 });
 
