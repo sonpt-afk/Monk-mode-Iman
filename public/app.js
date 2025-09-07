@@ -15,7 +15,6 @@ class MonkModeDashboard {
         this.setupCharts();
         this.loadTodayData();
         this.updateWeeklyStats();
-        this.renderMemoryBank();
     }
 
     // Data Management
@@ -84,12 +83,6 @@ class MonkModeDashboard {
             this.exportData();
         });
 
-        // Memory form submission
-        document.getElementById('memoryForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            this.saveMemory();
-        });
-
         // Modal close
         document.querySelector('.modal-close').addEventListener('click', () => {
             this.hideModal();
@@ -124,92 +117,6 @@ class MonkModeDashboard {
         // Update charts if needed
         if (tabName === 'weekly') {
             this.updateWeeklyChart();
-        }
-        if (tabName === 'memory-bank') {
-            this.renderMemoryBank();
-        }
-    }
-
-    // Memory Bank
-    async renderMemoryBank() {
-        try {
-            const response = await fetch('/api/memories');
-            const memories = await response.json();
-            const container = document.getElementById('memoryListContainer');
-            container.innerHTML = '';
-
-            if (memories.length === 0) {
-                container.innerHTML = '<p>No memories stored yet.</p>';
-                return;
-            }
-
-            memories.forEach(memory => {
-                const memoryEl = document.createElement('div');
-                memoryEl.className = 'memory-item';
-                memoryEl.innerHTML = `
-                    <h4>${memory.title}</h4>
-                    <p>${memory.content}</p>
-                `;
-                container.appendChild(memoryEl);
-            });
-        } catch (error) {
-            console.error('Failed to load memories:', error);
-        }
-    }
-
-    async saveMemory() {
-        const title = document.getElementById('memoryTitle').value;
-        const content = document.getElementById('memoryContent').value;
-
-        if (!title || !content) {
-            Toastify({
-                text: "Title and content are required!",
-                duration: 2000,
-                close: true,
-                gravity: "top",
-                position: "right",
-                backgroundColor: "linear-gradient(to right, #ff5f6d, #ffc371)",
-            }).showToast();
-            return;
-        }
-
-        const newMemory = { title, content };
-
-        try {
-            const response = await fetch('/api/memories', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(newMemory),
-            });
-
-            if (response.ok) {
-                Toastify({
-                    text: "Memory saved successfully!",
-                    duration: 2000,
-                    close: true,
-                    gravity: "top",
-                    position: "right",
-                    backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
-                }).showToast();
-
-                document.getElementById('memoryTitle').value = '';
-                document.getElementById('memoryContent').value = '';
-                this.renderMemoryBank();
-            } else {
-                throw new Error('Failed to save memory');
-            }
-        } catch (error) {
-            console.error('Failed to save memory:', error);
-            Toastify({
-                text: "Error saving memory!",
-                duration: 2000,
-                close: true,
-                gravity: "top",
-                position: "right",
-                backgroundColor: "linear-gradient(to right, #ff5f6d, #ffc371)",
-            }).showToast();
         }
     }
 
