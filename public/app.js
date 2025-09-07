@@ -436,6 +436,11 @@ class MonkModeDashboard {
         const container = document.getElementById('monthlyMilestones');
         container.innerHTML = '';
 
+        if (!this.data.monthly_milestones || !Array.isArray(this.data.monthly_milestones)) {
+            console.warn('monthly_milestones data is missing or not an array. Skipping rendering.');
+            return;
+        }
+
         this.data.monthly_milestones.forEach(milestone => {
             const milestoneEl = document.createElement('div');
             milestoneEl.className = 'milestone-card card';

@@ -53,7 +53,8 @@ async function getDatabase() {
         health_checklist: JSON.parse(await fs.readFile(path.join(__dirname, 'health_checklist.json'), 'utf-8')),
         anti_distraction_system: JSON.parse(await fs.readFile(path.join(__dirname, 'anti_distraction_system.json'), 'utf-8')),
         tracking_dashboard: JSON.parse(await fs.readFile(path.join(__dirname, 'tracking_dashboard.json'), 'utf-8')),
-        monk_mode_flashcards: JSON.parse(await fs.readFile(path.join(__dirname, 'monk_mode_flashcards.json'), 'utf-8'))
+        monk_mode_flashcards: JSON.parse(await fs.readFile(path.join(__dirname, 'monk_mode_flashcards.json'), 'utf-8')),
+        monthly_milestones: [] // Thêm trường này
     };
 
     await kv.set('db', initialDb);
