@@ -244,6 +244,7 @@ class MonkModeDashboard {
                     stopOnFocus: true,
                     callback: () => this.switchTab('overview')
                 }).showToast();
+                this.updateCharts(); // Update charts after saving
             }
         });
     }
@@ -283,11 +284,11 @@ class MonkModeDashboard {
 
     // Charts
     setupCharts() {
-        this.setupWeeklyChart();
-        this.setupWeeklyDetailChart();
+        this.renderWeeklyChart();
+        this.renderWeeklyDetailChart();
     }
 
-    setupWeeklyChart() {
+    renderWeeklyChart() {
         const ctx = document.getElementById('weeklyChart').getContext('2d');
         const last7Days = this.getLast7DaysLogs();
         
@@ -295,6 +296,10 @@ class MonkModeDashboard {
             const date = new Date(log.date);
             return date.toLocaleDateString('vi-VN', { weekday: 'short' });
         });
+
+        if (this.charts.weekly) {
+            this.charts.weekly.destroy(); // Destroy existing chart before re-rendering
+        }
 
         this.charts.weekly = new Chart(ctx, {
             type: 'line',
@@ -361,7 +366,7 @@ class MonkModeDashboard {
         });
     }
 
-    setupWeeklyDetailChart() {
+    renderWeeklyDetailChart() {
         const ctx = document.getElementById('weeklyDetailChart').getContext('2d');
         const last7Days = this.getLast7DaysLogs();
         
@@ -369,6 +374,10 @@ class MonkModeDashboard {
             const date = new Date(log.date);
             return date.toLocaleDateString('vi-VN', { month: 'short', day: 'numeric' });
         });
+
+        if (this.charts.weeklyDetail) {
+            this.charts.weeklyDetail.destroy(); // Destroy existing chart before re-rendering
+        }
 
         this.charts.weeklyDetail = new Chart(ctx, {
             type: 'bar',
@@ -417,12 +426,9 @@ class MonkModeDashboard {
         });
     }
 
-    updateWeeklyChart() {
-        if (this.charts.weeklyDetail) {
-            const last7Days = this.getLast7DaysLogs();
-            this.charts.weeklyDetail.data.datasets[0].data = last7Days.map(log => log.mood_score);
-            this.charts.weeklyDetail.update();
-        }
+    updateCharts() {
+        this.renderWeeklyChart();
+        this.renderWeeklyDetailChart();
     }
 
     // Monthly Milestones
